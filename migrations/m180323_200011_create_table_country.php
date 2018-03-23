@@ -19,14 +19,6 @@ class m180323_200011_create_table_country extends Migration
             'lng' => $this->string(45)->notNull(),
         ]);
 
-//        $this->insert('country', [
-//            'code' => 'DE',
-//            'name' => 'Germany',
-//            'phonecode' => '49',
-//            'lat' => '111111111',
-//            'lng' => '222222222',
-//        ]);
-
         $this->batchInsert('country', ['id', 'code', 'name', 'phonecode', 'lat', 'lng'], [
             ['1', 'AF', 'Afghanistan', '93', '33.93911', '67.709953'],
             ['2', 'AL', 'Albania', '355', '41.153332', '20.168331'],
@@ -283,18 +275,4 @@ class m180323_200011_create_table_country extends Migration
         $this->dropTable('country');
     }
 
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        echo "m180323_200011_create_table_country cannot be reverted.\n";
-
-        return false;
-    }
-    */
 }
