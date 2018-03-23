@@ -48,19 +48,4 @@ class m180323_192720_create_table_place_lang extends Migration
 
         $this->dropTable('place_lang');
     }
-
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        echo "m180323_192720_create_table_place_lang cannot be reverted.\n";
-
-        return false;
-    }
-    */
 }
