@@ -20,7 +20,7 @@ info "Configure composer"
 composer config --global github-oauth.github.com ${github_token}
 echo "Done!"
 
-info "Install project dependencies"
+info "Install acme dependencies"
 cd /app
 composer --no-progress --prefer-dist install
 
